@@ -24,4 +24,4 @@ The default settings are basic and focused on pleasing most people, but you're f
 
 ##
 
-![Settings](https://i.imgur.com/JMjo5j9.png)
+![Settings](https://i.imgur.com/2uYHvo7.png)
