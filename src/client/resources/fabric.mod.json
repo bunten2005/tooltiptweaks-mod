@@ -5,7 +5,7 @@
     "name": "Tooltip Tweaks",
     "description": "Expanding and revamping Minecraft's tooltips",
     "authors": [
-        "bunten"
+        "lunarbunten"
     ],
     "contact": {
         "sources": "https://github.com/lunarbunten/tooltiptweaks-mod",
@@ -34,12 +34,12 @@
         "tooltiptweaks.mixins.json"
     ],
     "depends": {
-        "minecraft": ">=1.21.2",
-        "fabricloader": ">=0.16.7",
-        "fabric": ">=0.106.1",
-        "yet_another_config_lib_v3": ">=3.6.0"
+        "minecraft": ">=1.21.4",
+        "fabricloader": ">=0.16.9",
+        "fabric": ">=0.112.1",
+        "yet_another_config_lib_v3": ">=3.6.2"
     },
-    "suggests": {
+    "recommends": {
         "modmenu": "*"
     }
 }
