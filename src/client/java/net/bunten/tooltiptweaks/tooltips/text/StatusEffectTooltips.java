@@ -102,7 +102,7 @@ public class StatusEffectTooltips {
 
     private void addAppliedStatusEffects(ItemStack stack, List<Text> lines) {
         boolean isPotion = stack.getItem() instanceof PotionItem;
-        boolean isWaterBottle = isPotion && stack.get(DataComponentTypes.POTION_CONTENTS).potion().get() == Potions.WATER;
+        boolean isWaterBottle = isPotion && stack.get(DataComponentTypes.POTION_CONTENTS).potion().isPresent() && stack.get(DataComponentTypes.POTION_CONTENTS).potion().get() == Potions.WATER;
 
         if ((!isPotion && statusEffects.isEmpty()) || isWaterBottle) return;
 
