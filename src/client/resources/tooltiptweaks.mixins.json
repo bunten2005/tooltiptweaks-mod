@@ -18,6 +18,7 @@
     "LingeringPotionItemMixin",
     "OminousBottleAmplifierComponentMixin",
     "PotionItemMixin",
+    "ShieldItemMixin",
     "SuspiciousStewEffectsComponentMixin",
     "TippedArrowItemMixin"
   ]
