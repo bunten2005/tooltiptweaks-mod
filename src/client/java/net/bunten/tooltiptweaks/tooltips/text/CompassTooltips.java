@@ -8,7 +8,6 @@ import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.LodestoneTrackerComponent;
-import net.minecraft.item.CompassItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.text.MutableText;
@@ -17,6 +16,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.GlobalPos;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.world.World;
 
 import java.util.List;
 import java.util.Optional;
@@ -43,7 +43,7 @@ public class CompassTooltips {
             LodestoneTrackerComponent component = stack.get(DataComponentTypes.LODESTONE_TRACKER);
             if (component != null) target = component.target();
         } else {
-            if (stack.isOf(Items.COMPASS)) target = Optional.ofNullable(CompassItem.createSpawnPos(world));
+            if (stack.isOf(Items.COMPASS)) target = Optional.of(new GlobalPos(World.OVERWORLD, world.getSpawnPos()));
             if (stack.isOf(Items.RECOVERY_COMPASS)) target = client.player.getLastDeathPos();
         }
 
